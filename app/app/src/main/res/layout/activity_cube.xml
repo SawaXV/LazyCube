@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:cube="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context="com.uon.lazycube.CubeActivity"
+              android:orientation="vertical"
+              android:background="@color/background">
+    <ImageView
+        android:id="@+id/gradient"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:srcCompat="@drawable/gradient"/>
+    <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+        <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/topAppBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:title="Solution"
+                app:titleCentered="true"
+                app:titleTextAppearance="@style/TextAppearance.AppCompat.Large"
+                android:background="@color/background"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            app:layout_constraintDimensionRatio="w,1:1">
+        <com.catalinjurjiu.animcubeandroid.AnimCube
+                android:id="@+id/animCube"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                cube:backgroundColor="@color/background"
+                cube:doubleRotationSpeed="15"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/complete_animation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:lottie_autoPlay="false"
+            app:lottie_loop="false"
+            app:lottie_rawRes="@raw/confetti"
+            app:lottie_speed="1" />
+    </RelativeLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:text="@string/moves"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/move_text"
+                android:layout_gravity="center|top" android:gravity="center|top" android:textSize="24sp"/>
+    </LinearLayout>
+    <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+    <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:paddingLeft="36dp" android:paddingRight="36dp">
+        <Button
+                android:text="@string/rescan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/rescan_btn"
+                android:textColor="#1C1B1F" android:layout_centerHorizontal="true"
+        />
+    </RelativeLayout>
+    <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center" android:paddingLeft="36dp" android:paddingRight="36dp"
+                android:layout_weight="1" android:weightSum="2">
+            <com.google.android.material.button.MaterialButton
+                    android:id="@+id/back_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_button_left"
+                    app:icon="@drawable/left_arrow"
+                    app:iconTint="#FFFFFF"
+                    android:contentDescription="Previous Move" android:gravity="start|top"
+                    app:iconGravity="textStart"
+                    android:layout_weight="0.95"
+                    android:drawableTint="@color/black" android:theme="@style/Theme.LazyCubeApp.MoveButton"/>
+            <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" android:layout_weight="0.1"/>
+            <com.google.android.material.button.MaterialButton
+                    android:id="@+id/move_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/right_arrow"
+                    android:contentDescription="Next Move"
+                    app:iconTint="#FFFFFF"
+                    android:gravity="top|end"
+                    app:iconGravity="textStart"
+                    android:layout_weight="0.95"
+                    android:background="@drawable/rounded_button_right"
+                    android:theme="@style/Theme.LazyCubeApp.MoveButton"/>
+        </LinearLayout>
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" tools:layout_centerHorizontal="true" android:paddingLeft="36dp"
+                android:paddingRight="36dp" android:weightSum="1">
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" android:id="@+id/play_btn" android:layout_weight="0.4"
+                    app:iconTint="@color/black"
+                    android:contentDescription="Play Button" android:foregroundGravity="center"
+                    android:text=" "/>
+            <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_weight="0.2"/>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_weight="0.4">
+                <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"/>
+                <SeekBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/playSpeedBar"
+                        android:layout_gravity="center_horizontal|center_vertical" android:scaleX="1.5"
+                        android:scaleY="1.5" android:max="4" android:progress="2"
+                />
+                <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

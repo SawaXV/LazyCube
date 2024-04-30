@@ -1,0 +1,99 @@
+<resources>
+
+    <!-- general -->
+    <string name="action_settings">Ajustes</string>
+    <string name="scan_complete">¡Finalizado!!</string>
+    <string name="moves">Mover - 0/21</string>
+    <string name="updated_move">Mover </string>
+    <string name="scan">Escanear</string>
+    <string name="tutorial">Tutoriales</string>
+    <string name="about">Acerca de</string>
+
+    <string name="scan_fail_snackbar">Parece que tenemos problemas para escanear tu cubo. Vuelva a escanear las caras. \n
+        Asegúrate de tener buena iluminación.</string>
+    <string name="scan_complete_fail_snackbar">Parece que no podemos escanear tu cubo. Toque para reiniciar el escaneo. \n
+        Muévase a una buena iluminación para obtener mejores resultados. Ejemplo cerca de una ventana.</string>
+    <string name="restart_scan">Reanudar</string>
+
+    <!-- activity_camera -->
+    <string name="continue_rotation">Sigue girando tu cubo</string>
+    <string name="solve">Resolver</string>
+
+    <string name="solving_tutorial">Tutorial de resolución</string>
+    <string name="scanning_tutorial">Tutorial de escaneo</string>
+
+    <!-- activity_help_solving -->
+    <string name="instructions">INSTRUCCIONES</string>
+    <string name="scanning_step_1">1. Sostenga el cubo frente a la cámara, intente mantener el cubo centrado en todo momento.</string>
+    <string name="scanning_step_2">2. Gira lentamente el cubo mostrando cada lado a la cámara.</string>
+    <string name="scanning_step_3">3. A medida que escanea, cada uno de los cubos centrales desaparecerá cuando se escanea el lado, continúe escaneando hasta que los 6 hayan desaparecido.</string>
+    <string name="scanning_step_4">4. ¡Presiona el botón terminado para ver tu solución!</string>
+    <string name="back">Atrás</string>
+
+    <!-- activity_main -->
+    <string name="app_name">LazyCube</string>
+    <string name="welcome">Bienvenida</string>
+    <string name="get_started">Empezar</string>
+
+    <!-- activity_tutorial -->
+    <string name="information">Información</string>
+    <string name="purpose">El propósito de esta aplicación es brindar a los usuarios la capacidad de resolver su Cubo de Rubik escaneando su cubo y siguiendo los pasos de la solución.</string>
+    <string name="how_to_scan">En la vista de escaneo del cubo, presente cada cara del cubo a la cámara. Asegúrese de que las caras no estén obstruidas y que tenga buenas condiciones de iluminación.</string>
+    <string name="when_scanned_1">Una vez que se hayan escaneado todas las caras, se le presentará un botón para pasar a la pantalla de solución.</string>
+    <string name="when_scanned_2">Su cubo escaneado se mostrará en la pantalla en 3D. Arrastrar el cubo te permitirá girarlo.</string>
+    <string name="controls">Al tocar de un lado a otro, el cubo se moverá en la pantalla para mostrarle el siguiente paso. Sigue los pasos hasta resolver el cubo.</string>
+    <string name="troubleshooting">Solución de problemas</string>
+    <string name="no_progress">Si la barra de progreso no avanza, asegúrese de que el cubo esté a la vista con poca o ninguna obstrucción, incluido el fondo.</string>
+    <string name="lighting_conditions">Las condiciones de iluminación son muy importantes para escanear los colores correctos del cubo. Si enfrenta fallas de escaneo, asegúrese de pasar a una iluminación más neutral, cerca de una ventana o con una iluminación más fría.</string>
+    <string name="restart_tip">Si continúa sin escanear, presione el botón \"Reiniciar\" ubicado en la parte inferior derecha de la pantalla de la cámara.</string>
+
+    <!-- activity cube -->
+    <string name="rescan">Volver a escanear</string>
+
+    <!-- changelog dialog -->
+    <string name="changelog_fail_text">No se puede cargar el registro de cambios…</string>
+    <string name="close">Salida</string>
+    <string name="changelog_title">Registro de cambios</string>
+
+    <!-- about -->
+    <string name="about_title">Información</string>
+    <string name="privacy_policy">Los desarrolladores de Lazy Cube se toman muy en serio la privacidad de los datos. \n
+        Aparte de la información que Android proporciona a los desarrolladores que usted puede elegir proporcionar, Android no utiliza marcos de análisis o publicidad de terceros. \n
+        Lazy Cube no registra información sobre usted y no tiene ningún interés en hacerlo más allá de solicitar acceso a la cámara, que no graba video ni guarda imágenes. \n
+        \n<b>Lazy Cube no recopila, transmite, distribuye ni vende sus datos.</b></string>
+    <string name="privacy_policy_title">Política de privacidad</string>
+    <string name="credits_body">
+        • Alexander Bull \n
+        • Alfie Inman \n
+        • Alfred Roberts \n
+        • Hisham Sohawon \n
+        • Matthew Bedford \n
+        • Sarwar Rashid \n
+        • Tautvydas Zilevicius
+    </string>
+    <string name="credits_title">Creditos</string>
+    <string name="libraries_body">Las bibliotecas utilizadas por Lazy Cube incluyen: \n
+        • TensorFlow Lite \n
+        • AnimCube de cjurjiu \n
+        • Min2Phase de cs0x7f
+    </string>
+    <string name="libraries_title">Bibliotecas</string>
+    <string name="licensing_title">Licencia</string>
+    <string name="licensing_body">Lazy Cube para Android se construye usando lo siguiente:\n\nAPACHE 2.0 \nTensorFlow Lite \nAnimCube \n--- \nCopyright 2023 Apache \n \nLicensed under the Apache License, Version 2.0 (the License); you may not use this file except in compliance with the License. You may obtain a copy of the License at \n \nhttp://www.apache.org/licenses/LICENSE-2.0 \n \nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an AS ISBASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. \nSee the License for the specific language governing permissions and limitations under the License. \n \nMIT \nMin2Phase \n--- \nCopyright © 2023 Chen Shuang \n \nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the Software), to deal in the Software without restriction, including without limitation the rights \nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: \n \nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. \n \nTHE SOFTWARE IS PROVIDED AS IS, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, \nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE \nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE \nSOFTWARE.</string>
+    <string name="version_number">Versión %1$s</string>
+    <string name="scanning_subtitle">Mostrar las seis caras a la cámara.</string>
+    <string name="scanning_title">Nosotras estamos procesando tu cubo</string>
+    <string name="title_activity_settings">Ajustes</string>
+    <string name="faq_title">"Preguntas más frecuentes "</string>
+    <string name="tutorials">Tutoriales</string>
+    <string name="faq_q1">"¿Por qué no se escanea mi cubo? "</string>
+    <string name="faq_a1">Bajo ciertas condiciones de iluminación, algunos de los colores de un cubo de Rubik pueden aparecer incorrectamente, como el rojo que aparece como naranja a través de la IA de LazyCube. Pasar a una iluminación más neutra, cerca de una ventana lejos de la iluminación cálida da mejores resultados.  Otro problema podría ser el cubo utilizado. Si los colores de su cubo son muy diferentes a los que espera la IA de la aplicación, la detección puede fallar. Asegúrate de que el cubo que estás usando tenga los colores estándar del cubo de Rubik.</string>
+    <string name="faq_q2">"El resultado del cubo escaneado no es lo que parece el mío. "</string>
+    <string name="faq_a2">En casos excepcionales, hay situaciones en las que la IA no puede determinar la configuración correcta de su cubo, lo que da como resultado un cubo diferente al que ve en la vida real. La IA de LazyCube puede encontrar varias configuraciones \"correctas\" para su cubo, lo que da como resultado un cubo diferente. La mejor solución a esto es intentar revolver tu cubo un poco más.</string>
+    <string name="faq_q3">¿Puedo usar cualquier cubo de Rubik?</string>
+    <string name="faq_a3">LazyCube actualmente solo funciona con el cubo de Rubik de 3x3. La IA de LazyCube funciona mejor con cubos de Rubik con colores estándar (blanco, amarillo, rojo, verde, azul y verde). Cualquier variación importante en estos colores (como un \"amarillo verdoso\" o un \"rojo anaranjado\") puede causar problemas con la detección.</string>
+    <string name="auto_play">Debajo de los botones de movimiento hay un botón de reproducción automática. Al presionar Reproducir/Pausar, el cubo animará los movimientos automáticamente, con una velocidad que se puede variar con el control deslizante adyacente.</string>
+    <string name="progress_bar">En la parte inferior de la pantalla de escaneo se encuentra una barra de progreso que representa los colores centrales de cada rostro que se requiere escanear para lograr un escaneo completo. Se mostrará una marca sobre cada cara del cubo una vez que se haya escaneado con éxito.</string>
+
+</resources>
+

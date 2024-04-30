@@ -1,0 +1,3 @@
+rootProject.name = 'LazyCubeLogic'
+include ':min2phase'
+project(':min2phase').projectDir = new File("./min2phase")

@@ -1,0 +1,79 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.LazyCubeApp" parent="Theme.Material3.Dark">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/home_button</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/home_button</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="snackbarStyle">@style/Theme.LazyCubeApp.Snackbar</item>
+    </style>
+    <style name="Theme.LazyCubeApp.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="preferenceTheme">@style/Theme.LazyCubeApp</item>
+    </style>
+    <style name="Theme.LazyCubeApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.LazyCubeApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.LazyCubeApp.Button" parent="ThemeOverlay.Material3">
+        <item name="android:backgroundTint">@color/home_button</item>
+        <item name="android:textColor">@color/background</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Theme.LazyCubeApp.SolveButton" parent="ThemeOverlay.Material3">
+        <item name="colorPrimary">@color/solve_button</item>
+    </style>
+
+    <style name="Theme.LazyCubeApp.MoveButton" parent="ThemeOverlay.Material3">
+        <item name="colorPrimary">@color/move_button</item>
+        <item name="colorPrimaryVariant">@color/move_button_alt</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+
+    <style name="Theme.LazyCubeApp.Title" parent="ThemeOverlay.Material3">
+        <item name="android:textColor">@color/home_button</item>
+        <item name="android:textSize">56sp</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Theme.LazyCubeApp.Welcome" parent="ThemeOverlay.Material3">
+        <item name="android:textColor">@color/home_button</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Theme.LazyCubeApp.Snackbar" parent="ThemeOverlay.Material3">
+<!--        <item name="android:backgroundTint">@color/snackbar_background</item>-->
+<!--        <item name="android:textColor">@color/white</item>-->
+<!--        <item name="android:textSize">20sp</item>-->
+<!--        <item name="android:fontFamily">@font/roboto</item>-->
+<!--        <item name="android:textStyle">bold</item>-->
+<!--        <item name="android:padding">10dp</item>-->
+<!--        <item name="android:layout_width">wrap_content</item>-->
+<!--        <item name="android:layout_height">wrap_content</item>-->
+    </style>
+</resources>

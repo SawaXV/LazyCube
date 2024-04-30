@@ -1,0 +1,12 @@
+twophase.jar
+cs/*
+ui/*
+m2pT.data
+test.class
+FullTable.prunP
+
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build

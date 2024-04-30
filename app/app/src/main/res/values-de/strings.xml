@@ -1,0 +1,101 @@
+<resources>
+
+    <!-- general -->
+    <string name="action_settings">Einstellungen</string>
+    <string name="scan_complete">Fertig!</string>
+    <string name="moves">Umzug - 0/21</string>
+    <string name="updated_move">Umzug </string>
+    <string name="scan">Scan</string>
+    <string name="tutorial">Lernprogramm</string>
+    <string name="about">Information</string>
+
+
+    <string name="scan_fail_snackbar">Anscheinend haben wir Probleme beim Scannen Ihres Cubes. Scannen Sie die Gesichter erneut. \n
+        Stellen Sie sicher, dass Sie in guter Beleuchtung sind.</string>
+    <string name="scan_complete_fail_snackbar">Anscheinend können wir Ihren Cube nicht scannen. Tippen Sie auf , um den Scanvorgang neu zu starten. \n
+        Wechseln Sie für beste Ergebnisse zu einer guten Beleuchtung. Beispiel in der Nähe eines Fensters.</string>
+    <string name="restart_scan">Neustart</string>
+
+    <!-- activity_camera -->
+    <string name="continue_rotation">Drehen Sie Ihre Kubus weiter</string>
+    <string name="solve">Lösen</string>
+
+    <string name="solving_tutorial">Anweisungen lösen</string>
+    <string name="scanning_tutorial">Tutorial zum Scannen</string>
+
+    <!-- activity_help_solving -->
+    <string name="instructions">Anweisungen</string>
+    <string name="scanning_step_1">1. Halten Sie den Würfel vor die Kamera, versuchen Sie immer, den Würfel mittig zu halten.</string>
+    <string name="scanning_step_2">2. Drehen Sie langsam den Würfel, der jede Seite zur Kamera zeigt.</string>
+    <string name="scanning_step_3">3. Während Sie scannen, verschwindet jeder der mittleren Würfel, wenn die Seite gescannt wird. Scannen Sie weiter, bis alle 6 verschwunden sind.</string>
+    <string name="scanning_step_4">4. Drücken Sie die Schaltfläche „Fertig“, um Ihre Lösung zu sehen!</string>
+    <string name="back">Zurück</string>
+
+    <!-- activity_main -->
+    <string name="app_name">Lazy Cube</string>
+    <string name="welcome">Willkommen</string>
+    <string name="get_started">Einstieg</string>
+
+    <!-- activity_tutorial -->
+    <string name="information">Information</string>
+    <string name="purpose">Der Zweck dieser App ist es, Benutzern die Möglichkeit zu geben, ihre Probleme zu lösen Rubik\'s Cube mühelos, indem Sie ihren Würfel scannen und den Lösungsschritten folgen.</string>
+    <string name="how_to_scan">Präsentieren Sie in der Scan-Ansicht des Würfels jede Seite des Würfels der Kamera. Stellen Sie sicher, dass die Dateien klar sind und Sie in gutem Licht sind.</string>
+    <string name="when_scanned_1">Sobald alle Gesichter gescannt wurden, wird Ihnen eine Schaltfläche angezeigt, um zum Lösungsbildschirm zu gelangen.</string>
+    <string name="when_scanned_2">Ihr gescannter Würfel erscheint in 3D auf dem Bildschirm. Sie können den Würfel drehen, indem Sie ihn ziehen.</string>
+    <string name="controls">Durch Antippen der Vorwärts- und Rückwärts-Schaltflächen wird der Würfel über den Bildschirm bewegt, um Ihnen den zu unternehmenden Schritt anzuzeigen. Folgen Sie den Schritten, bis der Würfel gelöst ist.</string>
+    <string name="troubleshooting">Fehlerbehebung</string>
+    <string name="no_progress">Wenn der Fortschrittsbalken nicht fortschreitet, vergewissern Sie sich, dass der Würfel gut sichtbar ist und wenig bis gar keine Hindernisse aufweist, einschließlich des Hintergrunds.</string>
+    <string name="lighting_conditions">Die Lichtverhältnisse sind sehr wichtig, um die richtigen Farben des Würfels zu scannen. Wenn Sie auf Scanfehler stoßen, stellen Sie sicher, dass Sie zu einer neutraleren Beleuchtung, in der Nähe eines Fensters oder zu einer kühleren Beleuchtung wechseln.</string>
+    <string name="restart_tip">"Wenn es weiterhin nicht scannt, drücken Sie die Schaltfläche „Neustart“ unten rechts auf dem Kamerabildschirm. "</string>
+
+    <!-- activity cube -->
+    <string name="rescan">Erneut scannen</string>
+
+    <!-- changelog dialog -->
+    <string name="changelog_fail_text">Änderungsprotokoll kann nicht geladen werden...</string>
+    <string name="close">Schließen</string>
+    <string name="changelog_title">Änderungsprotokoll</string>
+
+    <!-- about -->
+    <string name="about_title">About</string>
+    <string name="privacy_policy">Die Entwickler von Lazy Cube nehmen den Datenschutz sehr ernst. \n
+        Abgesehen von den Informationen, die Android den Entwicklern zur Verfügung stellt, die Sie bereitstellen können, verwendet es keine Analyse- oder Werbe-Frameworks von Drittanbietern. \n
+        Lazy Cube protokolliert keine Informationen über Sie und hat kein Interesse daran, außer Sie um Kamerazugriff zu bitten, der kein Video aufzeichnet oder Bilder speichert. /n
+        \n<b>Lazy Cube sammelt, überträgt, verteilt oder verkauft Ihre Informationen nicht.</b></string>
+    <string name="privacy_policy_title">Datenschutz-Bestimmungen</string>
+    <string name="credits_body">
+        • Alexander Bull \n
+        • Alfie Inman \n
+        • Alfred Roberts \n
+        • Hisham Sohawon \n
+        • Matthew Bedford \n
+        • Sarwar Rashid \n
+        • Tautvydas Zilevicius
+    </string>
+    <string name="credits_title">Kredite</string>
+    <string name="libraries_body">Zu den von Lazy Cube verwendeten Bibliotheken gehören: \n
+        • TensorFlow Lite \n
+        • AnimCube von cjurjiu \n
+        • Min2Phase von cs0x7f
+    </string>
+    <string name="libraries_title">Bibliotheken</string>
+    <string name="licensing_title">Lizenzierung</string>
+    <string name="licensing_body">Lazy Cube für Android ist gebaut mit:\n\nAPACHE 2.0 \nTensorFlow Lite \nAnimCube \n--- \nCopyright 2023 Apache \n \nLicensed under the Apache License, Version 2.0 (the License); you may not use this file except in compliance with the License. You may obtain a copy of the License at \n \nhttp://www.apache.org/licenses/LICENSE-2.0 \n \nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an AS ISBASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. \nSee the License for the specific language governing permissions and limitations under the License. \n \nMIT \nMin2Phase \n--- \nCopyright © 2023 Chen Shuang \n \nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the Software), to deal in the Software without restriction, including without limitation the rights \nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: \n \nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. \n \nTHE SOFTWARE IS PROVIDED AS IS, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, \nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE \nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE \nSOFTWARE.</string>
+    <string name="version_number">Version %1$s</string>
+    <string name="scanning_subtitle">"Zeigen Sie der Kamera alle sechs Gesichter "</string>
+    <string name="scanning_title">Wir verarbeiten Ihren Würfel</string>
+    <string name="title_activity_settings">Einstellungen</string>
+    <string name="faq_title">FAQ</string>
+    <string name="tutorials">Tutorials</string>
+    <string name="faq_q1">"Warum wird mein Cube nicht gescannt? "</string>
+    <string name="faq_a1">Unter bestimmten Lichtverhältnissen können einige Farben eines Zauberwürfels falsch erscheinen, z. B. Rot, das durch die KI von LazyCube als Orange erscheint. Der Wechsel zu einer neutraleren Beleuchtung, in der Nähe eines Fensters, entfernt von warmer Beleuchtung, ergibt die besten Ergebnisse.  Ein weiteres Problem könnte der verwendete Würfel sein. Wenn die Farben Ihres Würfels zu unähnlich zu dem sind, was die KI der App erwartet, kann die Erkennung fehlschlagen. Stellen Sie sicher, dass der von Ihnen verwendete Würfel die Standardfarben von Rubik’s hat.</string>
+    <string name="faq_q2">"Das Ergebnis des gescannten Würfels entspricht nicht meinem Aussehen. "</string>
+    <string name="faq_a2">In seltenen Fällen gibt es Situationen, in denen die KI die richtige Konfiguration Ihres Würfels nicht herausfinden kann, was zu einem anderen Würfel führt, als Sie ihn im wirklichen Leben sehen. Die KI von LazyCube findet möglicherweise mehrere „richtige“ Konfigurationen für Ihren Würfel, was zu einem anderen Würfel führt. Die beste Lösung dafür ist, zu versuchen, Ihren Würfel ein bisschen mehr zu verwirren.</string>
+    <string name="faq_q3">Kann ich jeden Zauberwürfel verwenden?</string>
+    <string name="faq_a3">"LazyCube funktioniert derzeit nur mit 3x3-Zauberwürfeln. Die KI von LazyCube funktioniert am besten mit Rubiks Würfeln mit Standardfarben (Weiß, Gelb, Rot, Grün, Blau und Grün). Jede größere Abweichung in diesen Farben (z. B. „grün-gelb“ oder „orange-rot“) kann Probleme bei der Erkennung verursachen. "</string>
+    <string name="progress_bar">Am unteren Rand des Scanbildschirms befindet sich ein Fortschrittsbalken, der die mittleren Farben jedes Gesichts darstellt, das gescannt werden muss, um einen vollständigen Scan zu erzielen. Über jeder Würfelfläche wird ein Häkchen angezeigt, sobald sie erfolgreich gescannt wurde.</string>
+    <string name="auto_play">Unterhalb der Verschieben-Schaltflächen befindet sich eine Auto-Play-Schaltfläche. Durch Drücken von Play/Pause bewegt sich der Würfel automatisch mit einer Geschwindigkeit, die mit dem benachbarten Schieberegler variiert werden kann.</string>
+
+</resources>
+
+

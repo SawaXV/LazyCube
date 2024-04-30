@@ -1,0 +1,144 @@
+defaults:
+  resources:
+    instance-type: C5
+
+jobs:
+  get-lazycube-repo:
+    uses: git-checkout@v1
+    with:
+      url: https://projects.cs.nott.ac.uk/comp2002/2022-2023/team43_project
+      ref: 69ad1fc6be8a1e289f8c74250c8d3c99f044606c
+      username: paperspace
+      password: secret:ACCESS_TOKEN
+    outputs:
+      repo:
+        type: volume
+
+  tfl-train-det0:
+    uses: script@v1
+    env:
+      ROBOFLOW_API: secret:ROBOFLOW_API
+    with:
+      image: tensorflow/tensorflow:latest-gpu
+      script: |-
+        apt-get update 
+        apt-get install -y libgl1-mesa-glx
+        apt-get -y install libusb-1.0-0-dev
+        pip install roboflow
+        pip install python-dotenv
+        pip uninstall -y tensorflow && pip install -q tensorflow==2.8.0
+        pip install tflite-model-maker
+        pip install tflite-support
+        pip install pycocotools
+        cd /inputs/repo/deep-learning
+        touch .env
+        echo "ROBOFLOW_API=$ROBOFLOW_API" > .env
+        python train.py --batch-size 64 --epochs 250
+        cp -R lazycubedet0.tflite /outputs/lazy-cube-data-det0 
+    needs:
+      - get-lazycube-repo
+    inputs:
+      repo: get-lazycube-repo.outputs.repo
+    outputs:
+      lazy-cube-data-det0:
+        type: dataset
+        with:
+          ref: dsdqs00vze7vtce
+    resources:
+      instance-type: P4000
+
+  tfl-det0-create-model:
+    needs:
+      - tfl-train-det0
+    inputs:
+      dataset: tfl-train-det0.outputs.lazy-cube-data-det0
+    outputs:
+      tfl-det0-model:
+        type: string
+    uses: create-model@v1
+    with:
+      name: lazycube-model-det0
+      type: Tensorflow 
+
+  # tfl-model-det0-upload:
+  #   uses: script@v1
+  #   needs:
+  #     - get-lazycube-repo
+  #     - tfl-train-det0
+  #   inputs:
+  #     repo: get-lazycube-repo.outputs.repo
+  #     dataset: tfl-train-det0.outputs.lazy-cube-data-det0
+  #   with:
+  #     image: bash:5
+  #     script: |-
+  #       cd /inputs/repo/deep-learning
+  #       cp -R /inputs/lazy-cube-data-det0/lazycubedet0.tflite TFL/Models/latest
+  #       git add TFL/Models/latest/lazycubedet0.tflite
+  #       git commit -m "Update TFL model"
+  #       git push --force origin m-ar-workflow-pipeline
+
+  # tfl-train-detx:
+  #   uses: script@v1
+  #   env:
+  #     ROBOFLOW_API: secret:ROBOFLOW_API
+  #   with:
+  #     image: tensorflow/tensorflow:latest-gpu
+  #     script: |-
+  #       apt-get update 
+  #       apt-get install -y libgl1-mesa-glx
+  #       apt-get -y install libusb-1.0-0-dev
+  #       pip install roboflow
+  #       pip install python-dotenv
+  #       pip uninstall -y tensorflow && pip install -q tensorflow==2.8.0
+  #       pip install tflite-model-maker
+  #       pip install tflite-support
+  #       pip install pycocotools
+  #       cd /inputs/repo/deep-learning
+  #       touch .env
+  #       echo "ROBOFLOW_API=$ROBOFLOW_API" > .env
+  #       python train.py --spec efficientdet_lite3 --model-name lazycubedetx.tflite
+  #       # python train.py --spec efficientdet_lite3 --model-name lazycubedetx.tflite --batch-size 1 --epochs 1
+  #       cp -R lazycubedetx.tflite /outputs/lazy-cube-data-detx 
+  #   needs:
+  #     # Train after det0, in series, otherwise the gpu runs out of memory
+  #     - get-lazycube-repo
+  #     - tfl-train-det0
+  #   inputs:
+  #     repo: get-lazycube-repo.outputs.repo
+  #   outputs:
+  #     lazy-cube-data-detx:
+  #       type: dataset
+  #       with:
+  #         ref: dsmf7h5bfaaz49l  
+  #   resources:
+  #     instance-type: P4000
+
+  # tfl-detx-create-model:
+  #   needs:
+  #     - tfl-train-detx
+  #   inputs:
+  #     dataset: tfl-train-detx.outputs.lazy-cube-data-detx
+  #   outputs:
+  #     tfl-detx-model:
+  #       type: string
+  #   uses: create-model@v1
+  #   with:
+  #     name: lazycube-model-detx
+  #     type: Tensorflow 
+
+  # tfl-model-det0-upload:
+  #   uses: script@v1
+  #   needs:
+  #     - get-lazycube-repo
+  #     - tfl-train-detx
+  #   inputs:
+  #     repo: get-lazycube-repo.outputs.repo
+  #     dataset: tfl-train-detx.outputs.lazy-cube-data-detx
+  #   with:
+  #     image: bash:5
+  #     script: |-
+  #       cd /inputs/repo/deep-learning
+  #       cp -R /inputs/lazy-cube-data-detx/lazycubedetx.tflite TFL/Models/latest
+  #       git add TFL/Models/latest/lazycubedetx.tflite
+  #       git commit -m "Update TFL detx model"
+  #       git push --force origin m-ar-workflow-pipeline

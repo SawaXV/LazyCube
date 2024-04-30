@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#D0BCFF</color>
+    <color name="purple_500">#1C1B1F</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="home_button">#D0BCFF</color>
+    <color name="background">#1F1C26</color>
+    <color name="move_button">#4E4A57</color>
+    <color name="move_button_alt">#201e24</color>
+    <color name="changelog_background">#121213</color>
+    <color name="solve_button">#FF3700B3</color>
+    <color name="snackbar_background">#313033</color>
+</resources>

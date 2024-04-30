@@ -1,0 +1,98 @@
+<resources>
+
+    <!-- general -->
+    <string name="action_settings">设置</string>
+    <string name="scan_complete">完成的！</string>
+    <string name="moves">移动 - 0/21</string>
+    <string name="updated_move">移动</string>
+    <string name="scan">扫描</string>
+    <string name="tutorial">教程</string>
+    <string name="about">关于</string>
+
+    <string name="scan_fail_snackbar">看起来我们在扫描您的立方体时遇到了问题。重新扫描面部。\n
+        确保光线充足。</string>
+    <string name="scan_complete_fail_snackbar">看起来我们无法扫描您的多维数据集。单击以重新开始扫描。\n
+        转向良好的照明以获得最佳效果。靠近窗户的例子。</string>
+    <string name="restart_scan">重新开始</string>
+
+    <!-- activity_camera -->
+    <string name="continue_rotation">继续旋转你的立方体</string>
+    <string name="solve">解决</string>
+
+    <string name="solving_tutorial">解决</string>
+    <string name="scanning_tutorial">求解教程</string>
+
+    <!-- activity_help_solving -->
+    <string name="instructions">扫描教程</string>
+    <string name="scanning_step_1">1. 将立方体放在相机前面，尽量使立方体居中。</string>
+    <string name="scanning_step_2">2. 慢慢旋转立方体，使每一面都在相机前面。</string>
+    <string name="scanning_step_3">3. 扫描时，中心的每个方块都会消失，一直扫描直到6个方块全部消失。</string>
+    <string name="scanning_step_4">4. 按完成按钮查看您的解决方案！</string>
+    <string name="back">退后</string>
+
+    <!-- activity_main -->
+    <string name="app_name">LazyCube</string>
+    <string name="welcome">欢迎</string>
+    <string name="get_started">开始</string>
+
+    <!-- activity_tutorial -->
+    <string name="information">信息</string>
+    <string name="purpose">这个应用程序的目的是让用户通过扫描他们的魔方并按照解决步骤轻松解决他们的魔方。</string>
+    <string name="how_to_scan">在立方体扫描视图中，立方体的每个面都呈现给相机。确保脸部畅通无阻，并且您处于良好的照明条件下。</string>
+    <string name="when_scanned_1">扫描完所有面孔后，您会看到一个按钮，可移至解决方案屏幕。</string>
+    <string name="when_scanned_2">您扫描的立方体将以 3D 形式出现在屏幕上。拖动立方体将允许您旋转它。</string>
+    <string name="controls">向前和向后轻按将使立方体在屏幕上移动以显示要采取的步骤。按照步骤进行操作，直到解决立方体。</string>
+    <string name="troubleshooting">故障排除</string>
+    <string name="no_progress">如果进度条没有前进，请确保立方体清晰可见，几乎没有或没有障碍物，包括背景。</string>
+    <string name="lighting_conditions">照明条件对于扫描立方体的正确颜色非常重要。如果您遇到扫描失败，请确保移动到更中性的照明、靠近窗户或更冷的照明。</string>
+    <string name="restart_tip">如果仍然无法扫描，请按位于相机屏幕右下角的“重新启动”按钮。</string>
+
+    <!-- activity cube -->
+    <string name="rescan">重新扫描</string>
+
+    <!-- changelog dialog -->
+    <string name="changelog_fail_text">无法加载变更日志...</string>
+    <string name="close">出口</string>
+    <string name="changelog_title">更改日志</string>
+
+    <!-- about -->
+    <string name="about_title">信息</string>
+    <string name="privacy_policy">Lazy Cube 的开发人员非常重视数据隐私。 \n
+        除了 Android 向开发者提供您可以决定提供的信息外，它不使用第三方分析或广告框架。 \n
+        Lazy Cube 不会记录您的任何信息，除了请求不录制视频或保存图像的摄像头访问权限外，没有兴趣这样做。 \n
+        \n<b>懒立方不会收集、传输、分发或出售您的数据。</b></string>
+    <string name="privacy_policy_title">隐私政策</string>
+    <string name="credits_body">
+        • Alexander Bull \n
+        • Alfie Inman \n
+        • Alfred Roberts \n
+        • Hisham Sohawon \n
+        • Matthew Bedford \n
+        • Sarwar Rashid \n
+        • Tautvydas Zilevicius
+    </string>
+    <string name="credits_title">信用</string>
+    <string name="libraries_body">Lazy Cube 使用的库包括: \n
+        • TensorFlow Lite \n
+        • AnimCube 经过 cjurjiu \n
+        • Min2Phase 经过 cs0x7f
+    </string>
+    <string name="libraries_title">图书馆</string>
+    <string name="licensing_title">许可</string>
+    <string name="licensing_body">适用于 Android 的 Lazy Cube 是使用以下方法构建的：\n\nAPACHE 2.0 \nTensorFlow Lite \nAnimCube \n--- \nCopyright 2023 Apache \n \nLicensed under the Apache License, Version 2.0 (the License); you may not use this file except in compliance with the License. You may obtain a copy of the License at \n \nhttp://www.apache.org/licenses/LICENSE-2.0 \n \nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an AS ISBASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. \nSee the License for the specific language governing permissions and limitations under the License. \n \nMIT \nMin2Phase \n--- \nCopyright © 2023 Chen Shuang \n \nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the Software), to deal in the Software without restriction, including without limitation the rights \nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: \n \nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. \n \nTHE SOFTWARE IS PROVIDED AS IS, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, \nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE \nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE \nSOFTWARE.</string>
+    <string name="version_number">版本 %1$s</string>
+    <string name="scanning_subtitle">向相机展示所有六张脸</string>
+    <string name="scanning_title">"我们正在处理您的立方体 "</string>
+    <string name="title_activity_settings" translatable="false">设置</string>
+    <string name="faq_title">"常问问题 "</string>
+    <string name="faq_q1">为什么我的立方体没有被扫描？</string>
+    <string name="faq_a1">在某些光照条件下，魔方的某些颜色可能会显示不正确，例如通过 LazyCube 的 AI，红色显示为橙色。转向更中性的照明，靠近窗户，远离温暖的灯光，效果最好。  另一个问题可能是使用的多维数据集。如果立方体的颜色与应用程序 AI 的预期颜色相差太大，检测可能会失败。确保您使用的魔方具有标准魔方颜色</string>
+    <string name="faq_q2">扫描的立方体结果不是我的样子。</string>
+    <string name="faq_a2">在极少数情况下，AI 无法确定您的立方体的正确配置，从而导致立方体与您在现实生活中看到的不同。 LazyCube 的 AI 可能会为您的立方体找到多个“正确”配置，从而产生不同的立方体。最好的解决方案是尝试更多地打乱你的立方体</string>
+    <string name="faq_q3">我可以使用任何魔方吗？</string>
+    <string name="faq_a3">LazyCube 目前仅适用于 3x3 魔方。 LazyCube 的 AI 最适合与具有标准颜色（白色、黄色、红色、绿色、蓝色和绿色）的 Rubik 魔方一起使用。这些颜色的任何主要变化（例如“绿黄色”或“橙红色”）都可能导致检测问题。</string>
+    <string name="tutorials" translatable="false">教程</string>
+    <string name="auto_play">移动按钮下方是一个自动播放按钮。按下播放/暂停键将导致立方体自动移动动画，其速度可随相邻滑块的变化而变化。</string>
+    <string name="progress_bar">进度条位于扫描屏幕的底部，表示完成扫描所需扫描的每个面部的中心颜色。成功扫描后，每个立方体面上都会显示一个勾号。</string>
+
+</resources>

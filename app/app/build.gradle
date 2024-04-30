@@ -1,0 +1,80 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.uon.lazycubeapp'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.uon.lazycubeapp"
+        minSdk 24
+        targetSdk 33
+        versionCode 3
+        versionName "0.4"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+    aaptOptions {
+        noCompress "tflite"
+    }
+    buildToolsVersion '30.0.3'
+    sourceSets {
+        main {
+            java {
+                srcDirs 'src/main/java', 'src/test'
+            }
+        }
+    }
+}
+
+configurations {
+    javadocDeps
+}
+
+dependencies {
+    implementation 'com.airbnb.android:lottie:6.0.0'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.navigation:navigation-fragment:2.5.3'
+    implementation 'androidx.navigation:navigation-ui:2.5.3'
+
+    // Only CPU detection for now (seems to perform better than GPU)
+    implementation 'org.tensorflow:tensorflow-lite-task-vision:0.4.3'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation project(path: ':animcubeandroid')
+    implementation project(path: ':LazyCubeLogic')
+    implementation project(path: ':Cubot')
+    implementation project(path: ':min2phase')
+    implementation 'androidx.preference:preference:1.2.0'
+
+    var cameraXVersion = "1.3.0-alpha02"
+
+    implementation "androidx.camera:camera-core:$cameraXVersion"
+    implementation "androidx.camera:camera-camera2:$cameraXVersion"
+    implementation "androidx.camera:camera-view:$cameraXVersion"
+    implementation "androidx.camera:camera-lifecycle:$cameraXVersion"
+
+    implementation 'com.google.android.material:material:1.8.0-alpha01'
+
+    def lottieVersion = "6.0.0"
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+}

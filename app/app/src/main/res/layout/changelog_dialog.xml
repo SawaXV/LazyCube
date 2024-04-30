@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_dialog"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/changelogTitle"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center|center_vertical"
+            android:text="@string/changelog_title"
+            android:textSize="26sp" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/changelogScrollContainer"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/changelogTitle"
+        android:background="@drawable/changelog_rounded"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/changelogBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="monospace"
+            android:text='@string/changelog_fail_text'
+            android:textSize="14sp" />
+    </ScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/doneBtn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/changelogScrollContainer"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/close">
+
+    </com.google.android.material.button.MaterialButton>
+
+
+
+</RelativeLayout>

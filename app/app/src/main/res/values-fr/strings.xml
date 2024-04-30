@@ -1,0 +1,99 @@
+<resources>
+
+    <!-- general -->
+    <string name="action_settings">Paramètres</string>
+    <string name="scan_complete">Fini!</string>
+    <string name="moves">Déplacer - 0/21</string>
+    <string name="updated_move">Déplacer</string>
+    <string name="scan">Analyse</string>
+    <string name="tutorial">Tutoriels</string>
+    <string name="about">À propos</string>
+
+    <string name="scan_fail_snackbar">Il semble que nous rencontrions des difficultés pour analyser votre cube. Renumérisez les visages. \n
+        Assurez-vous d\'être bien éclairé.</string>
+    <string name="scan_complete_fail_snackbar">Il semble que nous ne soyons pas en mesure analyse votre cube. Appuyez sur pour redémarrer la numérisation. \n
+        Passez à un bon éclairage pour de meilleurs résultats. Exemple près d\'une fenêtre.</string>
+    <string name="restart_scan">Redémarrage</string>
+
+    <!-- activity_camera -->
+    <string name="continue_rotation">Continuez à faire tourner votre cube</string>
+    <string name="solve">Résoudre</string>
+
+    <string name="solving_tutorial">Tutoriel de résolution</string>
+    <string name="scanning_tutorial">Tutoriel de numérisation</string>
+
+    <!-- activity_help_solving -->
+    <string name="instructions">INSTRUCTIONS</string>
+    <string name="scanning_step_1">1. Tenez le cube devant la caméra, essayez de garder le cube centré à tout moment.</string>
+    <string name="scanning_step_2">2. Faites pivoter lentement le cube en montrant chaque côté à la caméra.</string>
+    <string name="scanning_step_3">3. Au fur et à mesure que vous numérisez, chacun des cubes centraux disparaîtra au fur et à mesure que le côté est numérisé, continuez à numériser jusqu\'à ce que les 6 soient partis.</string>
+    <string name="scanning_step_4">4. Appuyez sur le bouton Terminé pour voir votre solution!</string>
+    <string name="back">Dos</string>
+
+    <!-- activity_main -->
+    <string name="app_name">LazyCube</string>
+    <string name="welcome">Bienvenue</string>
+    <string name="get_started">Commencer</string>
+
+    <!-- activity_tutorial -->
+    <string name="information">Information</string>
+    <string name="purpose">Le but de cette application est de fournir aux utilisateurs la possibilité de résoudre leurs
+        Rubik\'s Cube sans effort en scannant leur cube et en suivant les étapes de la solution.</string>
+    <string name="how_to_scan">Sur la vue de balayage du cube, présentez chaque face du cube à la caméra. Assurez-vous que les visages ne sont pas obstrués et que vous êtes dans de bonnes conditions d\'éclairage.</string>
+    <string name="when_scanned_1">Une fois que tous les visages ont été scannés, un bouton vous sera présenté pour passer à l\'écran de la solution.</string>
+    <string name="when_scanned_2">Votre cube scanné sera affiché à l\'écran en 3D. Glisser sur le cube vous permettra de le faire pivoter.</string>
+    <string name="controls">Taper en avant et en arrière déplacera le cube sur l\'écran pour vous montrer quoi faire ensuite. Suivez les étapes jusqu\'à ce que le cube soit résolu.</string>
+    <string name="troubleshooting">Réparation</string>
+    <string name="no_progress">Si la barre de progression ne progresse pas, assurez-vous que le cube est clairement visible avec peu ou pas d\'obstructions, y compris l\'arrière-plan.</string>
+    <string name="lighting_conditions">Les conditions d\'éclairage sont très importantes pour scanner les bonnes couleurs du cube. Si vous rencontrez des échecs de numérisation, assurez-vous de passer à un éclairage plus neutre, près d\'une fenêtre ou dans un éclairage plus frais.</string>
+    <string name="restart_tip">S\'il continue de ne pas numériser, appuyez sur le bouton \"Redémarrer\" situé en bas à droite de l\'écran de l\'appareil photo.</string>
+
+    <!-- activity cube -->
+    <string name="rescan">Renumériser</string>
+
+    <!-- changelog dialog -->
+    <string name="changelog_fail_text">Impossible de charger le journal des modifications…</string>
+    <string name="close">Fermer</string>
+    <string name="changelog_title">Journal des modifications</string>
+
+    <!-- about -->
+    <string name="about_title">About</string>
+    <string name="privacy_policy">Les développeurs de Lazy Cube prennent très au sérieux la confidentialité des données. \n
+        Au-delà des informations qu\'Android fournit aux développeurs que vous pouvez décider de fournir, il n\'utilise aucun cadre d\'analyse ou de publicité tiers. \n
+        Lazy Cube n\'enregistre aucune information vous concernant et n\'a aucun intérêt à le faire au-delà de la demande d\'accès à la caméra qui n\'enregistre pas de vidéo ni ne sauvegarde d\'images. \n
+        \n<b>Lazy Cube ne collecte, ne transmet, ne distribue ni ne vend vos données.</b></string>
+    <string name="privacy_policy_title">Politique de confidentialité</string>
+    <string name="credits_body">
+        • Alexander Bull \n
+        • Alfie Inman \n
+        • Alfred Roberts \n
+        • Hisham Sohawon \n
+        • Matthew Bedford \n
+        • Sarwar Rashid \n
+        • Tautvydas Zilevicius
+    </string>
+    <string name="credits_title">Crédits</string>
+    <string name="libraries_body">Les bibliothèques utilisées par Lazy Cube incluent: \n
+        • TensorFlow Lite \n
+        • AnimCube de cjurjiu \n
+        • Min2Phase de cs0x7f
+    </string>
+    <string name="libraries_title">Bibliothèques</string>
+    <string name="licensing_title">Licence</string>
+    <string name="licensing_body">Lazy Cube pour Android est construit à l\'aide des éléments suivants:\n\nAPACHE 2.0 \nTensorFlow Lite \nAnimCube \n--- \nCopyright 2023 Apache \n \nLicensed under the Apache License, Version 2.0 (the License); you may not use this file except in compliance with the License. You may obtain a copy of the License at \n \nhttp://www.apache.org/licenses/LICENSE-2.0 \n \nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an AS ISBASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. \nSee the License for the specific language governing permissions and limitations under the License. \n \nMIT \nMin2Phase \n--- \nCopyright © 2023 Chen Shuang \n \nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the Software), to deal in the Software without restriction, including without limitation the rights \nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: \n \nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. \n \nTHE SOFTWARE IS PROVIDED AS IS, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, \nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE \nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE \nSOFTWARE.</string>
+    <string name="version_number">Version %1$s</string>
+    <string name="scanning_subtitle">Montrez les six visages à la caméra</string>
+    <string name="scanning_title">Nous traitons votre cube</string>
+    <string name="title_activity_settings" translatable="false">Paramètres</string>
+    <string name="faq_title">FAQ</string>
+    <string name="tutorials">Tutoriels</string>
+    <string name="faq_q1">"Pourquoi mon cube n'est-il pas scanné ? "</string>
+    <string name="faq_a1">Dans certaines conditions d\'éclairage, certaines couleurs d\'un Rubik\'s cube peuvent apparaître de manière incorrecte, comme le rouge apparaissant en orange via l\'IA de LazyCube. Passer à un éclairage plus neutre, près d\'une fenêtre loin d\'un éclairage chaud donne de meilleurs résultats.  Un autre problème pourrait être le cube utilisé. Si les couleurs de votre cube sont trop différentes de ce que l\'IA de l\'application attend, la détection peut échouer. Assurez-vous que le cube que vous utilisez a les couleurs standard du cube Rubik.</string>
+    <string name="faq_q2">Le résultat du cube scanné n\'est pas ce à quoi ressemble le mien.</string>
+    <string name="faq_a2">Dans de rares cas, il existe des situations où l\'IA ne peut pas déterminer la configuration correcte de votre cube, ce qui donne un cube différent de ce que vous voyez dans la vraie vie. L\'IA de LazyCube peut trouver plusieurs configurations \"correctes\" pour votre cube, résultant en un cube différent. La meilleure solution à cela est d\'essayer de brouiller un peu plus votre cube.</string>
+    <string name="faq_q3">Puis-je utiliser n\'importe quel Rubik\'s Cube ?</string>
+    <string name="faq_a3">LazyCube ne fonctionne actuellement qu\'avec le Rubik\'s cube 3x3. L\'IA de LazyCube fonctionne mieux avec les cubes Rubik avec des couleurs standard (blanc, jaune, rouge, vert, bleu et vert). Toute variation majeure de ces couleurs (comme un \"jaune-vert\" ou un \"rouge-orangé\") peut entraîner des problèmes de détection.</string>
+    <string name="auto_play">Sous les boutons de déplacement se trouve un bouton de lecture automatique. En appuyant sur Play/Pause, le cube animera automatiquement les mouvements, avec une vitesse qui peut être modifiée avec le curseur adjacent.</string>
+    <string name="progress_bar">Une barre de progression représentant les couleurs centrales de chaque face devant être numérisée pour obtenir une numérisation complète est située au bas de l\'écran de numérisation. Une coche s\'affichera sur chaque face du cube une fois qu\'elle aura été scannée avec succès.</string>
+
+</resources>

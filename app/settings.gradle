@@ -1,0 +1,25 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "LazyCube"
+include ':app'
+include ':animcubeandroid'
+include ':LazyCubeLogic'
+include ':Cubot'
+include ':min2phase'
+
+project(':LazyCubeLogic').projectDir = new File("../logic/LazyCubeLogic")
+project(':Cubot').projectDir = new File("./cubot.io")
+project(':min2phase').projectDir = new File("./min2phase")
+include ':lib'

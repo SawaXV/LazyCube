@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="faq_title">FAQ</string>
+    <string name="auto_play">Below the move buttons is an auto-play button. Pressing Play/Pause will cause the cube to animate moves automatically, with a speed that can be varied with the adjacent slider.</string>
+</resources>

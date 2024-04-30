@@ -1,0 +1,39 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:key="@string/preferences_key">
+    <PreferenceCategory
+        app:title="Application Appearance"
+        app:iconSpaceReserved="false">
+        <DropDownPreference
+            app:defaultValue="English"
+            app:entries="@array/language_entries"
+            app:entryValues="@array/language_entries_values"
+            app:key="language"
+            app:summary="Select the Application language"
+            app:iconSpaceReserved="false"
+            app:title="Language"/>
+        <DropDownPreference
+            app:key="theme"
+            app:defaultValue="Dark"
+            app:entries="@array/theme_entries"
+            app:entryValues="@array/theme_entries_values"
+            app:summary="Select the Application theme"
+            app:title="Theme"
+            app:iconSpaceReserved="false"
+            />
+    </PreferenceCategory>
+    <PreferenceCategory
+        app:title="Experimental"
+        app:iconSpaceReserved="false">
+    <SwitchPreference
+        app:key="turbo_mode"
+        app:summary="Increases scanning speed\nWarning: Can decrease scanning accuracy"
+        app:title="Turbo Mode"
+        app:iconSpaceReserved="false"/>
+    <SwitchPreference
+        app:key="dev_mode"
+        app:summary="Toggle developer debug mode"
+        app:title="Developer mode"
+        app:iconSpaceReserved="false"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

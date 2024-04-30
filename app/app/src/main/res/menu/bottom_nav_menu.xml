@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/scan_nav_bar"
+        android:title="@string/scan"
+        android:icon="@drawable/scan_icon" />
+
+    <item
+        android:id="@+id/tutorial_nav_bar"
+        android:title="@string/tutorial"
+        android:icon="@drawable/tutorial_icon"/>
+
+    <item
+        android:id="@+id/about_nav_bar"
+        android:title="@string/about"
+        android:icon="@drawable/about_icon"/>
+
+</menu>

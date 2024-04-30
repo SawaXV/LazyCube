@@ -1,0 +1,48 @@
+before_script:
+  - cd logic/LazyCubeLogic
+  - chmod +x ./gradlew
+
+stages: 
+  - build
+  - test
+  
+build-tfl-model:
+  stage: build
+  script:
+    - cd ./../../deep-learning
+    - pip3 install -U gradient
+    - export PATH="$HOME/.local/bin:$PATH"
+    - gradient apiKey 182ae75d76f3052a6454ec6a67ce2a
+    - gradient workflows run --id 89f2b098-3717-4dd2-b41c-46dcee4bc766 --path ./workflow.yaml
+  only:
+    - web
+
+build-logic-job:   
+  stage: build
+  script:
+    - ./gradlew assemble
+
+build-logic-javadoc-job:
+  stage: build
+  script:
+    - ./gradlew javadoc
+    - git clone https://gitlab-ci-token:glpat-TqtyiLG3ZaDnzeNJFstJ@gitlab.com/SawaXV/page.git doc_repo
+    - cd doc_repo
+    - cp -a ../build/docs/javadoc javadocs
+    - git config user.email "project43296445_bot@noreply.gitlab.com"
+    - git config user.name "docs_ci_test"
+    - git add -f javadocs
+    - git commit -m "Update logic javadoc from pipeline"
+    - git push --force origin main
+  # Only run job on commits to cube-logic
+  only:
+    - cube-logic
+
+test-logic-job:
+  stage: test
+  script:
+    - ./gradlew check
+  artifacts:
+    when: always
+    reports:
+      junit: logic/LazyCubeLogic/build/test-results/test/**/TEST-*.xml
